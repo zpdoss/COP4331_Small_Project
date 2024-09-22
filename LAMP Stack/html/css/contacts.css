@@ -1,0 +1,233 @@
+body 
+{
+    background-color: #93E9BE;
+    background-image: url('../images/underwater.png'); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1
+{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	font-family: 'arial', serif;
+	color: #e3ffee;
+	text-shadow:
+		3px 0px 0px black,   /* Right shadow */
+		0px 0px 0px black,  /* Left shadow */
+		0px 0px 0px black,   /* Bottom shadow */
+		0px 0px 0px black;  /* Top shadow */
+	margin-bottom: auto;
+}
+
+/* Hide the checkbox */
+.modal-toggle {
+    display: none;
+}
+
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content */
+#newContact
+{
+  width: 500;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 99;
+  top: 50px;
+  position: absolute;
+  margin-left: calc(50%-250px);
+  background-color: #fffebe;
+  
+}
+
+#newContact input
+{
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 93%;
+}
+
+/* Close button */
+.modal-close {
+    
+  padding: 15px;
+  border-radius: 5px;
+  float: right;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Show modal when checkbox is checked */
+.modal-toggle:checked + .modal {
+    display: flex;
+}
+
+/* Button styling */
+.modal-button {
+    display: inline-block;
+    padding: 10px 10px;
+    background: #fffebe;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.table
+{
+  font-size: 20px;
+  margin-top: 35px;
+  width: 80%;
+  margin: auto;
+  
+}
+
+.rows
+{
+  display: flex;
+  background: #e9ffc1;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.col
+{
+  background-color: #fffebe;
+  margin: 2px;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 15px;
+}
+
+.firstName
+{
+  flex-basis: 20%;
+}
+
+.lastName
+{
+  flex-basis: 20%;
+}
+
+.phone
+{
+  flex-basis: 20%;
+}
+
+.email
+{
+  flex-grow: 2;
+  flex-basis: 20%;
+}
+
+.header
+{
+  background-color: #fffebe;
+  font-weight: bolder;
+}
+
+.edit, .delete, .addContact
+{
+  flex-basis: 5%;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.modal
+{
+  display: none;
+}
+
+.modal-toggle:checked + .modal {
+  display: flex;
+}
+
+#newContact
+{
+  width: 500;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 99;
+  top: 50px;
+  position: absolute;
+  margin-left: calc(50%-250px);
+  background-color: #fffebe;
+  
+}
+
+#newContact input
+{
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 93%;
+}
+
+.input-err
+{
+  background-color: red;
+}
+
+#backgnd
+{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  top: 0;
+  left: 0;
+  
+}
+
+#submit
+{
+  background-color: rgb(47,95,151);
+}
+
+#cancel
+{
+  padding: 15px;
+  border-radius: 5px;
+  float: right;
+  margin: 5px;
+  cursor: pointer;
+  background-color: rgb(151,47,47);
+}
+
+#cancel:hover
+{
+  text-decoration: underline;
+}
+
+.buttons
+{
+  padding: 15px;
+  border-radius: 5px;
+  float: right;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.buttons:hover
+{
+  text-decoration: underline;
+}

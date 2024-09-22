@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/login.css" rel = "stylesheet"/>
+		<link href = "css/navbar.css" rel = "stylesheet"/>
+		<script type="text/javascript" src="js/code.js"></script>
+		<script type="text/javascript" src="js/md5.js"></script>
+	</head>
+  
+	<body>
+		<h1 id = "title">Group 16's Contact Manager</h1>
+		<h1 id = "title">Login</h1>
+		<div id = "loginDiv">
+			<span id = "inner-title">Login</span><br />
+			<p>Username:<br />
+			<input type = "text" id = "login" placeholder = "Username" required
+        pattern="(?=.*[a-zA-Z])[a-zA-Z0-9-_]{3,18}$"/><br />
+			<p>Password:<br />
+			<input type = "password" id = "loginPassword" placeholder = "Password"/><br />
+			<button type="button" id="loginButton" class="buttons" onclick="doLogin();" required
+        pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{8,32}" /> Sign in </button>
+			<span id="loginResult"></span>
+		</div>
+		
+		<div class="navbar">
+			<a class="active" href="login.html">Login</a>
+			<a href="signup.html">Sign Up</a>
+			<a href="https://github.com/zpdoss/COP4331_Small_Project">GitHub</a>
+		</div>
+	
+	</body>
+</html>
