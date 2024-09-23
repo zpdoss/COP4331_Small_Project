@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/login.css" rel = "stylesheet"/>
+		<link href = "css/navbar.css" rel = "stylesheet"/>
+		<script type="text/javascript" src="js/code.js"></script>
+		<script type="text/javascript" src="js/md5.js"></script>
+	</head>
+	
+	<div class="navbar">
+		<a class="active" href="login.html">Login</a>
+		<a href="signup.html">Sign Up</a>
+		<a href="https://github.com/zpdoss/COP4331_Small_Project">GitHub</a>
+	</div>
+		
+	<body>
+		<h1 id = "title">Group 16's Contact Manager</h1>
+		
+		<form id = "loginDiv">
+			<h2 id = "inner-title">Login</h2><br />
+			
+			<label for="username">Username</label><br />
+			<input type = "text" id = "login" placeholder = "Username" required
+				pattern="(?=.*[a-zA-Z])[a-zA-Z0-9-_]{3,18}$"/><br />
+		
+			<label for="password">Password</label><br />
+			<input type = "password" id = "loginPassword" placeholder = "Password" required
+				pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{8,32}"/><br />
+		
+			<button type="button" id="loginButton" class="buttons" onclick="doLogin();"/> Log In </button>
+			<span id="loginResult"></span>
+		</form>
+	
+	</body>
+</html>

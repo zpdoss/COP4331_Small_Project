@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/signup.css" rel = "stylesheet"/>
+		<link href = "css/navbar.css" rel = "stylesheet"/>
+		<script type="text/javascript" src="js/code.js"></script>
+		<script type="text/javascript" src="js/md5.js"></script>
+	</head>
+  
+	<div class="navbar">
+		<a href="login.html">Login</a>
+		<a class="active" href="signup.html">Sign Up</a>
+		<a href="https://github.com/zpdoss/COP4331_Small_Project">GitHub</a>
+	</div>
+  
+	<body>
+		<h1 id = "title">Need an Account?</h1>
+		<form id = "loginDiv">
+			<h2 id = "inner-title">Sign Up</h2><br />
+			
+			<label for="firstname">First Name</label><span style="padding-left: 227px;">
+			<label for="username">Username</label></span><br />
+			
+			<input type = "text" id = "firstName" placeholder = "Jane" required />
+			<span style="padding-left: 55px;">
+			<input type = "text" id = "username" placeholder = "Username" required
+				pattern="(?=.*[a-zA-Z])[a-zA-Z0-9-_]{3,18}" />
+			</span> <br />
+			
+			<label for="lastname">Last Name</label><span style="padding-left: 228px;">
+			<label for="password">Password</label></span><br />
+			
+			<input type = "text" id = "lastName" placeholder = "Doe" required />
+			<span style="padding-left: 55px;">
+			<input type = "password" id = "password" placeholder = "Password" required
+				pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{8,32}" /><br />
+				</span>
+			
+			<button type="button" id="loginButton" class="buttons" onclick="doSignup();"> Sign Up </button>
+			<span id="signupResult"></span>
+		</form>
+		
+	
+	</body>
+</html>

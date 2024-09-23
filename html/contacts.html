@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/contacts.css"/>
+	<link rel="stylesheet" href="css/navbar.css"/>
+	<script type="text/javascript" src="js/code.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
+	
+	<script type="text/javascript">
+		// Call loadContacts on page load
+		window.onload = function() {
+        // Check if userId is stored and is less than 1
+        const userId = localStorage.getItem('userId');
+        
+        if (!userId || userId < 1) {
+            // Redirect to login page
+            window.location.href = "login.html";
+        } else {
+            // Load contacts if user is valid
+            loadContacts();
+        }
+    };
+	</script>
+</head>
+    
+	<body>
+		<h1> Contact Manager </h1>
+		
+		<div class="table">
+		
+		<input type="text" id="Search" placeholder="Search Contact" onkeyup="performSearch()">
+
+			<div class="rows">
+				<div class="col firstName header">First Name</div>
+				<div class="col lastName header">Last Name</div>
+				<div class="col phone header">Phone Number</div>
+				<div class="col email header">Email Address</div>
+				<label for="modal-toggle" class="col header addContact" id="NewContact"> Add Contact </label>
+			</div>
+      
+			<div id="tblBodyContainer" class="scrollable">
+				<span id="tblBody"></span>
+			</div>
+		</div>
+	</body>
+  
+	<div class="navbar">
+		<a href="javascript:void(0);" onclick="doLogout();">Log Out</a>
+		<a href="aboutus.html">About Us</a>
+		<a class="active" href="contacts.html">Contacts</a>
+		<a href="https://github.com/zpdoss/COP4331_Small_Project">GitHub</a>
+	</div>
+  
+<body>
+    <input type="checkbox" id="modal-toggle" class="modal-toggle">
+
+    <div class="modal">
+      
+        <div id="newContact">
+          
+            <h2>Create New Contact</h2>
+      
+			<label class="contact" for="firstName">First Name:</label>
+			<input type = "text" id="firstName" placeholder = "Gabe" required />
+      
+			<label class="contact" for="lastName">Last Name:</label>
+			<input type = "text" id="lastName" placeholder = "Jimenez" required />
+      
+			<label class="contact" for="phone">Phone Number:</label>
+			<input type = "text" id="phone" placeholder = "xxx-xxx-xxxx" />
+      
+			<label class="contact" for="email">Email Address:</label>
+			<input type = "text" id="email" placeholder = "email@email.com" />
+      
+			<button type="button" id="submit" class="buttons" onclick="addContact();">Add Contact</button>
+			<label for="modal-toggle" id="cancel" class="modal-close" onclick="cancelButton();"> Cancel </label>
+
+	
+        </div>
+    </div>
+
+</body>
+</html>

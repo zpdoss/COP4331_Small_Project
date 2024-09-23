@@ -1,0 +1,37 @@
+.navbar 
+{
+  overflow: hidden;
+  background-color: #d8f9ff;
+  position:fixed;
+  bottom: 0;
+  width: 98.8%;
+   border-radius: 10px;
+}
+
+.navbar a 
+{
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+
+.navbar a:hover 
+{
+  background-color: #79bafd;
+  text-decoration: underline;
+}
+
+.navbar a.active
+{
+  background-color: #49a1fd;
+  color: white;
+}
+
+.navbar a:active
+{
+  background-color: #3a8ecb;
+}

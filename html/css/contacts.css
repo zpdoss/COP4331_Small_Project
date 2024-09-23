@@ -1,0 +1,330 @@
+body 
+{
+    background-color: #93E9BE;
+    background-image: url('../images/school.jpg'); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1
+{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	font-family: 'arial', serif;
+	color: #e3ffee;
+	text-shadow:
+		3px 0px 0px black,   /* Right shadow */
+		0px 0px 0px black,  /* Left shadow */
+		0px 0px 0px black,   /* Bottom shadow */
+		0px 0px 0px black;  /* Top shadow */
+	margin-bottom: auto;
+}
+
+h2
+{
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	font-family: 'arial', serif;
+	color: #ffffff;
+	margin-top: 15px;
+}
+
+/* Adds scrolling to contact list table */
+.scrollable 
+{
+	max-height: 600px; /* Adjust height as needed */
+	overflow-y: auto;  /* Enable vertical scrolling */
+	border: px solid #ccc; /* Optional: adds a border around the table */
+	margin-top: 5px; /* Optional: adds some spacing */
+}
+
+
+/* Hide the checkbox */
+.modal-toggle 
+{
+    display: none;
+}
+
+/* Modal background */
+.modal
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content */
+#newContact
+{
+	background-color: rgba(34, 120, 143, 0.2);
+    position: absolute;
+    top: 25px;
+	bottom: 50px;
+	margin-left: calc(50%-250px);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+	padding: 0px 35px 35px 35px;
+}
+
+#newContact input
+{
+	display: block;
+    height: 50px;
+    width: 93%;
+    border-radius: 10px;
+    padding: 0 10px;
+	margin-bottom: 16px;
+    font-size: 15px;
+	background: #ffffff;
+	color: black;
+	outline: none;
+    border: none;
+}
+
+.contact
+{
+	font-size: 18px;
+	font-family: 'arial', serif; 
+	color: #ffffff;
+}
+
+/* Close button */
+.modal-close 
+{
+	padding: 14px 15px 14px 15px;
+	border-radius: 5px;
+	float: right;
+	margin-left: 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+/* Show modal when checkbox is checked */
+.modal-toggle:checked + .modal 
+{
+    display: flex;
+}
+
+/* Button styling */
+.modal-button 
+{
+    display: inline-block;
+    padding: 10px 10px;
+    background: #EFD759;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.table
+{
+	font-family: 'arial', serif;
+	font-size: 20px;
+	margin-top: 35px;
+	width: 80%;
+	margin: auto;
+	color: Black;
+	background-color: rgba(31,78,120,0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+	padding: 15px 20px 20px 20px;
+}
+
+.rows
+{
+	display: flex;
+}
+
+.col
+{
+	background-color: #d8f9ff;
+	margin: 2px;
+	padding: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 8px;
+}
+
+.firstName
+{
+	flex-basis: 20%;
+}
+
+.lastName
+{
+	flex-basis: 20%;
+}
+
+.phone
+{
+	flex-basis: 20%;
+}
+
+.email
+{
+	flex-grow: 2;
+	flex-basis: 20%;
+}
+
+.header
+{
+	font-family: 'arial', serif;
+	font-weight: bolder;
+}
+
+.addContact
+{
+	flex-basis: 20%;
+	cursor: pointer;
+	font-weight: none;
+	background-color: #77c9f3;
+	font-weight: normal;
+	text-align: center;
+}
+
+.addContact:hover
+{
+	text-decoration: underline;
+}
+
+.addContact:active
+{
+	background-color: #dddddd;
+}
+
+.action-button-e
+{
+	flex-basis: 10%;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: #a7e8a1;
+	
+}
+
+.action-button-e:hover
+{
+	text-decoration: underline;
+}
+
+.action-button-e:active
+{
+	background-color:#77b870;
+}
+
+.action-button-d
+{
+	flex-basis: 10%;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: #f4a399;
+}
+
+.action-button-d:hover
+{
+	text-decoration: underline;
+}
+
+.action-button-d:active
+{
+	background-color:rgb(255 99 99);
+}
+
+.modal
+{
+	display: none;
+}
+
+.modal-toggle:checked + .modal 
+{
+	display: flex;
+}
+
+.input-err
+{
+	background-color: red;
+}
+
+#backgnd
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 50;
+	top: 0;
+	left: 0;
+  
+}
+
+#submit
+{
+	background-color: #77c9f3;
+	color: black;
+	font-family: 'Poppins',sans-serif
+}
+
+#cancel
+{
+	background-color: rgb(255 64 64);
+	color: ffffff;
+	font-family: 'Poppins',sans-serif
+}
+
+#cancel:hover
+{
+	text-decoration: underline;
+}
+
+.buttons
+{
+	padding: 15px;
+	border-radius: 5px;
+	float: right;
+	margin-left: 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.buttons:hover
+{
+	text-decoration: underline;
+}
+
+#Search 
+{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px; /* adjust to your desired width */
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	font-size: 18px;
+}

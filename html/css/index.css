@@ -1,0 +1,30 @@
+body 
+{
+    background-color: #93E9BE;
+    background-image: url('../images/underwater.png'); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title
+{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	font-family: 'arial', serif;
+	color: #e3ffee;
+	text-shadow:
+		3px 0px 0px black,   /* Right shadow */
+		0px 0px 0px black,  /* Left shadow */
+		0px 0px 0px black,   /* Bottom shadow */
+		0px 0px 0px black;  /* Top shadow */
+	margin-bottom: auto;
+}
+
+.buttons
+{
+	text-align: right;
+	border: none;
+}
